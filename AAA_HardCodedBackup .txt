@@ -1,0 +1,186 @@
+public static QuestionsRepository[] hardCodedRepository() {
+		QuestionsRepository questionsDataBaseArray[] = new QuestionsRepository[2];
+		questionsDataBaseArray[0] = new QuestionsRepository("Math");
+		questionsDataBaseArray[1] = new QuestionsRepository("capital Cities");
+		QuestionsRepository questionsDataBaseMath = questionsDataBaseArray[0];
+		QuestionsRepository questionsDataBaseCP = questionsDataBaseArray[1];
+//		Math
+		Question q1 = new CloseQuestion("What is 5 + 2?", Question.Difficulty.EASY);
+		Question q2 = new CloseQuestion("What is 10 - 3?", Question.Difficulty.EASY);
+		Question q3 = new CloseQuestion("What is 6 + 4?", Question.Difficulty.MEDIUM);
+		Question q4 = new CloseQuestion("What is 9 - 2?", Question.Difficulty.MEDIUM);
+		Question q5 = new CloseQuestion("What is 8 + 3?", Question.Difficulty.MEDIUM);
+		Question q6 = new CloseQuestion("What is 12 - 7?", Question.Difficulty.MEDIUM);
+		Question q7 = new CloseQuestion("What is 2 + 9?", Question.Difficulty.HARD);
+		Question q8 = new CloseQuestion("What is 15 - 6?", Question.Difficulty.HARD);
+		Question q9 = new CloseQuestion("What is 11 + 3?", Question.Difficulty.HARD);
+		Question q10 = new CloseQuestion("What is 20 - 9?", Question.Difficulty.HARD);
+
+		Answer a1 = new Answer("1");
+		Answer a2 = new Answer("2");
+		Answer a3 = new Answer("3");
+		Answer a4 = new Answer("4");
+		Answer a5 = new Answer("5");
+		Answer a6 = new Answer("6");
+		Answer a7 = new Answer("7");
+		Answer a8 = new Answer("8");
+		Answer a9 = new Answer("9");
+		Answer a10 = new Answer("10");
+
+//		open question part
+
+		Answer a21 = new Answer(
+				"In mathematics, addition is the operation of combining two or more numbers to obtain a total or sum.");
+		Answer a22 = new Answer(
+				"In mathematics, subtraction is the operation of finding the difference between two numbers or quantities.");
+		Answer a23 = new Answer(
+				"In mathematics, multiplication is the operation of repeated addition or combining equal groups.");
+
+		OpenQuestion q14 = new OpenQuestion("What is addition?", a21, Question.Difficulty.EASY);
+		OpenQuestion q15 = new OpenQuestion("What is subtraction?", a22, Question.Difficulty.EASY);
+		OpenQuestion q16 = new OpenQuestion("What is multiplication?", a23, Question.Difficulty.MEDIUM);
+
+//		q1 add answer
+		q1.addAnswer(a1, false);
+		q1.addAnswer(a2, false);
+		q1.addAnswer(a3, false);
+		q1.addAnswer(a4, false);
+		q1.addAnswer(a5, false);
+		q1.addAnswer(a6, false);
+		q1.addAnswer(a7, true);
+		q1.addAnswer(a8, false);
+//		q2 add answer
+		q2.addAnswer(a2, false);
+		q2.addAnswer(a3, false);
+		q2.addAnswer(a4, false);
+		q2.addAnswer(a5, false);
+		q2.addAnswer(a6, false);
+		q2.addAnswer(a8, false);
+//		q3 add answer
+		q3.addAnswer(a10, true);
+		q3.addAnswer(a8, false);
+		q3.addAnswer(a7, false);
+		q3.addAnswer(a4, false);
+		q3.addAnswer(a2, false);
+		q3.addAnswer(a1, false);
+//		q4 add answer
+		q4.addAnswer(a10, false);
+		q4.addAnswer(a8, false);
+		q4.addAnswer(a7, true);
+		q4.addAnswer(a4, false);
+//		q5 add answer
+		q5.addAnswer(a1, false);
+		q5.addAnswer(a2, false);
+		q5.addAnswer(a8, false);
+		q5.addAnswer(a9, false);
+//		q6 add answer
+		q6.addAnswer(a5, true);
+		q6.addAnswer(a2, false);
+		q6.addAnswer(a8, false);
+		q6.addAnswer(a9, false);
+
+//		create Repository
+//		add questions
+		questionsDataBaseMath.addQuestionsToRepository(q1);
+		questionsDataBaseMath.addQuestionsToRepository(q2);
+		questionsDataBaseMath.addQuestionsToRepository(q3);
+		questionsDataBaseMath.addQuestionsToRepository(q4);
+		questionsDataBaseMath.addQuestionsToRepository(q5);
+		questionsDataBaseMath.addQuestionsToRepository(q6);
+		questionsDataBaseMath.addQuestionsToRepository(q7);
+		questionsDataBaseMath.addQuestionsToRepository(q8);
+		questionsDataBaseMath.addQuestionsToRepository(q9);
+		questionsDataBaseMath.addQuestionsToRepository(q10);
+//		add the open question
+		questionsDataBaseMath.addQuestionsToRepository(q14);
+		questionsDataBaseMath.addQuestionsToRepository(q15);
+		questionsDataBaseMath.addQuestionsToRepository(q16);
+//		add answers
+		questionsDataBaseMath.addAnswerToRepository(a1);
+		questionsDataBaseMath.addAnswerToRepository(a2);
+		questionsDataBaseMath.addAnswerToRepository(a3);
+		questionsDataBaseMath.addAnswerToRepository(a4);
+		questionsDataBaseMath.addAnswerToRepository(a5);
+		questionsDataBaseMath.addAnswerToRepository(a6);
+		questionsDataBaseMath.addAnswerToRepository(a7);
+		questionsDataBaseMath.addAnswerToRepository(a8);
+		questionsDataBaseMath.addAnswerToRepository(a9);
+		questionsDataBaseMath.addAnswerToRepository(a10);
+
+//		Capital cities
+		Question q11 = new CloseQuestion("What is the capital of France?", Question.Difficulty.EASY);
+		Question q12 = new CloseQuestion("What is the capital of England?", Question.Difficulty.MEDIUM);
+		Question q13 = new CloseQuestion("What is't the capital of Australia?", Question.Difficulty.HARD);
+		Question q17 = new CloseQuestion("What is the capital of Brazil?", Question.Difficulty.HARD);
+		Question q18 = new CloseQuestion("What is the capital of Japan?", Question.Difficulty.HARD);
+		Question q19 = new CloseQuestion("What is the capital of Germany?", Question.Difficulty.EASY);
+		Question q20 = new CloseQuestion("What is the capital of Canada?", Question.Difficulty.MEDIUM);
+		Question q21 = new CloseQuestion("What is the capital of South Africa?", Question.Difficulty.MEDIUM);
+		Question q22 = new CloseQuestion("What is the capital of Russia?", Question.Difficulty.HARD);
+		Question q23 = new CloseQuestion("What is the capital of China?", Question.Difficulty.HARD);
+
+		questionsDataBaseCP.addQuestionsToRepository(q11);
+		questionsDataBaseCP.addQuestionsToRepository(q12);
+		questionsDataBaseCP.addQuestionsToRepository(q13);
+		questionsDataBaseCP.addQuestionsToRepository(q17);
+		questionsDataBaseCP.addQuestionsToRepository(q18);
+		questionsDataBaseCP.addQuestionsToRepository(q19);
+		questionsDataBaseCP.addQuestionsToRepository(q20);
+		questionsDataBaseCP.addQuestionsToRepository(q21);
+		questionsDataBaseCP.addQuestionsToRepository(q22);
+		questionsDataBaseCP.addQuestionsToRepository(q23);
+
+		Answer a11 = new Answer("London");
+		Answer a12 = new Answer("Beijing");
+		Answer a13 = new Answer("Ottawa");
+		Answer a14 = new Answer("New Delhi");
+		Answer a15 = new Answer("Moscow");
+		Answer a16 = new Answer("Mexico City");
+		Answer a17 = new Answer("Canberra");
+		Answer a18 = new Answer("Madrid");
+		Answer a19 = new Answer("Brussels");
+		Answer a20 = new Answer("Stockholm");
+
+		q11.addAnswer(a11, false);
+		q11.addAnswer(a12, false);
+		q11.addAnswer(a13, false);
+		q11.addAnswer(a14, false);
+		q11.addAnswer(a15, false);
+//		q12 add answer
+		q12.addAnswer(a12, false);
+		q12.addAnswer(a13, false);
+		q12.addAnswer(a14, false);
+		q12.addAnswer(a11, true);
+		q12.addAnswer(a15, false);
+//		q13 add answer
+		q13.addAnswer(a12, true);
+		q13.addAnswer(a13, true);
+		q13.addAnswer(a14, true);
+		q13.addAnswer(a11, true);
+		q13.addAnswer(a15, true);
+//		q17 add answer
+		q17.addAnswer(a12, false);
+		q17.addAnswer(a13, false);
+		q17.addAnswer(a14, false);
+		q17.addAnswer(a11, false);
+		q17.addAnswer(a15, false);
+//		q18 add answer
+		q18.addAnswer(a20, false);
+		q18.addAnswer(a11, false);
+		q18.addAnswer(a19, false);
+		q18.addAnswer(a17, false);
+		q18.addAnswer(a15, false);
+
+		questionsDataBaseCP.addAnswerToRepository(a11);
+		questionsDataBaseCP.addAnswerToRepository(a12);
+		questionsDataBaseCP.addAnswerToRepository(a13);
+		questionsDataBaseCP.addAnswerToRepository(a14);
+		questionsDataBaseCP.addAnswerToRepository(a15);
+		questionsDataBaseCP.addAnswerToRepository(a16);
+		questionsDataBaseCP.addAnswerToRepository(a17);
+		questionsDataBaseCP.addAnswerToRepository(a18);
+		questionsDataBaseCP.addAnswerToRepository(a19);
+		questionsDataBaseCP.addAnswerToRepository(a20);
+
+		return questionsDataBaseArray;
+	}
