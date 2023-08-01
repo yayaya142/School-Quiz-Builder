@@ -22,14 +22,14 @@ This project was developed as part of the "Object-Oriented Programming in Java" 
 After running the application, you will be presented with a menu that provides various options to manage the quiz questions and answers. Follow the on-screen instructions to perform different actions, such as adding new answers, creating questions, and generating exams.
 
 ## Examples
-**Menu**<br>
-![menu](https://github.com/yayaya142/School-Quiz-Builder/assets/82652251/979e8e1b-c4c7-4b96-936c-3d50769401c6)
-
-**Questions**<br>
-![question repo](https://github.com/yayaya142/School-Quiz-Builder/assets/82652251/f69c9cd5-d97b-4430-9a80-2e868a8e7b8a)
-
-**Exam Demo**<br>
-![exam demo](https://github.com/yayaya142/School-Quiz-Builder/assets/82652251/16d34d35-0876-4cf0-b146-cabaee75c14c)
+**Menu**<br><br>
+![menu](https://github.com/yayaya142/School-Quiz-Builder/assets/82652251/dab1da4a-1277-4469-bb4c-ad8024c70449)
+<br>
+**Questions**<br><br>
+![question repo](https://github.com/yayaya142/School-Quiz-Builder/assets/82652251/c2d005e3-2ac3-4e52-a8a1-8c05ac9c2410)
+<br>
+**Exam Demo**<br><br>
+![exam demo](https://github.com/yayaya142/School-Quiz-Builder/assets/82652251/db2c3c2d-aa4d-4738-aed7-c73741b75da7)
 
 
 
